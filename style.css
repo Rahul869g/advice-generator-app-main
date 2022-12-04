@@ -42,10 +42,10 @@ main {
 
 .btnDiv {
   background-color: hsl(150, 100%, 66%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
+  display: inline-block;
+  padding: 1.5rem 1.6rem;
+  text-align: center;
+  background-repeat: no-repeat;
   border-radius: 50px;
   transform: scale(1);
   transition: all 200ms;
@@ -56,10 +56,10 @@ main {
   transition: all 250ms;
 }
 #dice-btn {
+  display: flex;
   background-image: url("images/icon-dice.svg");
   background-size: cover;
   background-blend-mode: multiply;
-  object-fit: contain;
   border: none;
   background-color: hsl(150, 100%, 66%);
   padding: 1em;
@@ -67,11 +67,11 @@ main {
 
 .button[data-icon="greeb-dice"] {
 }
-
+/* 
 @media (width >= 575px) {
   .container {
     max-width: 1440px;
   }
   .btnDiv {
   }
-}
+} */
