@@ -55,6 +55,7 @@ main {
 }
 .btnDiv:hover,
 .btnDiv:focus {
+  box-shadow: 0 0 40px hsl(150, 100%, 66%);
   transform: scale(1.2);
   transition: all 250ms;
 }
