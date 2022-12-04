@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  background-color: hsl(218, 23%, 16%);
+  font-family: "Manrope", sans-serif;
+}
+
+h1 {
+  color: hsl(193, 38%, 86%);
+  font-size: 1.75rem;
+}
+p {
+  color: hsl(150, 100%, 66%);
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  font-size: 0.75rem;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 1em;
+  max-width: 375px;
+
+  border-radius: 12px;
+  padding: 2em;
+  background-color: hsl(217, 19%, 24%);
+}
+.pattern {
+  margin-bottom: 2em;
+}
+
+.btnDiv {
+  background-color: hsl(150, 100%, 66%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border-radius: 50px;
+  transform: scale(1);
+  transition: all 200ms;
+}
+.btnDiv:hover,
+.btnDiv:focus {
+  transform: scale(1.2);
+  transition: all 250ms;
+}
+#dice-btn {
+  background-image: url("images/icon-dice.svg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  object-fit: contain;
+  border: none;
+  background-color: hsl(150, 100%, 66%);
+  padding: 1em;
+}
+
+.button[data-icon="greeb-dice"] {
+}
+
+@media (width >= 575px) {
+  .container {
+    max-width: 1440px;
+  }
+  .btnDiv {
+    background-color: brown;
+  }
+}
